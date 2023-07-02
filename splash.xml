@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="splash">
+
+    <splash name="splash">
+      <backgroundColor>000000FF</backgroundColor>
+    </splash>
+
+    <image name="background">
+      <path>./_art/splash.png</path>
+    </image>
+
+    <text name="label">
+      <color>FFFFFF</color>
+      <fontSize>0.023</fontSize>
+      <glowColor>00000016</glowColor>
+      <glowSize>2</glowSize>
+      <glowOffset>2</glowOffset>
+    </text>
+  </view>
+</theme>

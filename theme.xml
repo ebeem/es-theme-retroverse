@@ -15,6 +15,191 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 <theme>
     <formatVersion>4</formatVersion>
 
+    <variables>
+        <!-- Blue/Dark colour scheme -->
+        <!-- items with ## in the comments are items that people will want to change for different schemes -->
+        <!-- main filter folder name -->
+        <themecolor>blue</themecolor> <!-- ## color scheme - these are the folder locations for filters, graphics etc ## -->
+
+        <!-- menu icons - the main menu icons, either light or dark -->
+        <cmenuicons>light</cmenuicons> <!-- ## dark / light ## -->
+
+        <!-- menu filter - the filter for the main menu, either light or dark-->
+        <cmenufilter>dark</cmenufilter> <!-- ## dark / light ## -->
+
+        <!-- Menu colours - colours used by the main menus -->
+        <cmenufooter>a2a2a2</cmenufooter> <!-- ## menu footer color ## -->
+        <cmenutext>868686</cmenutext> <!-- ## menu text color ## -->
+        <cmenuseperator>191919</cmenuseperator> <!-- ## menu seperators ## -->
+        <cselected>FFFFFF</cselected> <!-- ## selected menu text ## -->
+        <cmenusubtitle>a2a2a2</cmenusubtitle> <!-- ## menu subtitle color ## -->
+        <cmenutitle>d0d0d0</cmenutitle> <!-- ## menu title color ## -->
+        <cmenubg>1d1d1d</cmenubg> <!-- ## menu background color ## -->
+
+
+        <!-- Global stuff -->
+        <chelptext>FFFFFF</chelptext> <!-- ## color of help menu text ## -->
+        <ctextglow>00003a</ctextglow> <!-- ## default glow color on text - only need to change this if light/dark theme ## -->
+
+        <!-- Selector highlight on menus and gamelist -->
+        <cselector>30508b</cselector> <!-- ## main gradient for all selector bars on menus and gamelist ## -->
+        <cselectorend>126b81</cselectorend> <!-- ## main gradient for all selector bars on menus and gamelist ## -->
+        <cgradienttype>horizontal</cgradienttype> <!-- horizontal or vertical -->
+
+        <!-- controller activity -->
+        <ccontroller>126b81</ccontroller> <!--## icons showing connected controllers ## -->
+        <cactivity>A0A0FFC0</cactivity>
+        <chotkey>FFA0A0C0</chotkey>
+
+        <!-- System view colour settings for text etc -->
+        <cinfotext>FFFFFF</cinfotext> <!--## info text color ## -->
+        <cdescriptiontext>FFFFFF</cdescriptiontext> <!--## description text color ## -->
+        <cshortdescriptiontext>FFFFFF</cshortdescriptiontext> <!--## short descirptiontext color ## -->
+
+        <!-- gamelists -->
+        <cgamelisttext>FFFFFF</cgamelisttext> <!-- ## non-selected text ## -->
+        <cselectedtext>FFFFFF</cselectedtext> <!-- ## selected text ## -->
+        <cglicons>FFFFFF</cglicons> <!-- ## icons for genre, release date etc ## -->
+        <cgldetail>FFFFFF</cgldetail> <!-- ## text for genre, release date etc ## -->
+        <cgdescription>FFFFFF</cgdescription> <!-- ## game description ## -->
+        <cglglow>00000016</cglglow> <!-- ## gamelist text glow colour ## -->
+        <crating>10b7dc</crating> <!-- ## rating star color ## -->
+
+        <!-- grid and carousel view -->
+        <cgtextbg>00000000</cgtextbg> <!-- text background -->
+        <cgtbg>00000000</cgtbg> <!-- tile background -->
+        <cgtext>dfddda</cgtext> <!-- unselected text -->
+        <cgtextselect>FFFFFF</cgtextselect> <!-- selected text -->
+        <cgtimage>535353</cgtimage> <!-- gridtile image color -->
+        <cgtimageselect>dfddda</cgtimageselect> <!-- gridtile image color selected -->
+
+        <!-- grid -->
+        <cgtbg>00000000</cgtbg> <!-- grid tile background color -->
+        <cgtbgedge>00000000</cgtbgedge> <!-- background edge color -->
+        <cgtbgedgeselect>10b7dc</cgtbgedgeselect> <!-- ##	 background edge of selected item # -->
+
+        <!-- carousel view -->
+        <ccenterfade>00000000</ccenterfade> <!-- center fade color -->
+        <cbgcenter>00000000</cbgcenter> <!-- background center color -->
+        <cbgcenterselect>00000000</cbgcenterselect> <!-- background center color selected -->
+        <cbgedge>00000000</cbgedge> <!-- background edge color -->
+        <cbgedgeselect>00000000</cbgedgeselect> <!-- ## background edge color selected ## -->
+        <cgt>80808080</cgt> <!-- gridtile -->
+        <cgtselect>FFFFFF</cgtselect> <!-- gridtile selected -->
+
+        <!-- menu fonts -->
+        <font1m>OpenSans-Light.ttf</font1m>
+
+        <!-- menu fonts -->
+        <font2m>OpenSans-SemiBold.ttf</font2m>
+
+        <!-- main system views -->
+        <font1s>OpenSans-Bold.ttf</font1s>
+
+        <!-- system info -->
+        <font2s>OpenSans-Bold.ttf</font2s>
+
+        <!-- System description -->
+        <font3s>OpenSans-SemiBold.ttf</font3s>
+
+        <!-- Font used by gamelist items -->
+        <font1g>OpenSans-SemiBold.ttf</font1g>
+
+        <!-- Font used by descriptions on gamelists -->
+        <font2g>OpenSans-SemiBold.ttf</font2g>
+
+        <!-- Font used for title on gamelist panel -->
+        <font3g>BebasNeue-Regular.ttf</font3g>
+
+        <!-- Font used on gamelist help system -->
+        <font4g>OpenSans-SemiBold.ttf</font4g>
+
+    </variables>
+
+
+    <view name="screen">
+        <controllerActivity name="controllerActivity">
+            <pos>0.01 0.972</pos>
+            <size>0.055 0.015</size>
+            <!--<horizontalAlignment>right</horizontalAlignment>-->
+            <itemSpacing>0.003</itemSpacing>
+            <imagePath>./_art/indicators/gamepad.svg</imagePath>
+        </controllerActivity>
+        <text name="clock">
+            <color>FFFFFF</color>
+            <fontSize>0.025</fontSize>
+            <fontPath>./font/Acre.otf</fontPath>
+            <pos>0.87 0.00</pos>
+            <size>0.09 0.058</size>
+            <alignment>right</alignment>
+            <verticalAlignment>center</verticalAlignment>
+        </text>
+    </view>
+
+    <view name="menu">
+        <menuText name="menufooter">
+            <fontPath>./fonts/${font2m}</fontPath>
+            <fontSize>0.022</fontSize>
+            <color>${cmenufooter}</color>
+        </menuText>
+
+        <menuText name="menutext">
+            <fontPath>./fonts/${font1m}</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>${cmenutext}</color>
+            <separatorColor>${cmenuseperator}</separatorColor>
+            <selectorColor>${cselector}</selectorColor>
+            <selectorColorEnd>${cselectorend}</selectorColorEnd>
+            <selectedColor>${cselected}</selectedColor>
+            <selectorGradientType>${cgradienttype}</selectorGradientType>
+        </menuText>
+
+        <menuTextSmall name="menutextsmall">
+            <fontPath>./fonts/${font2m}</fontPath>
+            <fontSize>0.029</fontSize>
+            <color>${cmenusubtitle}</color>
+        </menuTextSmall>
+
+        <menuText name="menutitle">
+            <fontPath>./fonts/${font2m}</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>${cmenutitle}</color>
+        </menuText>
+
+        <menuBackground name="menubg">
+            <color>${cmenubg}</color>
+            <path>./_art/menu_filters/${cmenufilter}/back.png</path>
+            <fadePath>./_art/menu_filters/${cmenufilter}/fade.png</fadePath>
+        </menuBackground>
+
+        <menuIcons name="menuicons">
+            <iconKodi>./_art/menu_icons/${cmenuicons}/Kodi.png</iconKodi>
+            <iconSystem>./_art/menu_icons/${cmenuicons}/System.png</iconSystem>
+            <iconUpdates>./_art/menu_icons/${cmenuicons}/Updates.png</iconUpdates>
+            <iconGames>./_art/menu_icons/${cmenuicons}/Games.png</iconGames>
+            <iconControllers>./_art/menu_icons/${cmenuicons}/Controllers.png</iconControllers>
+            <iconUI>./_art/menu_icons/${cmenuicons}/UI.png</iconUI>
+            <iconSound>./_art/menu_icons/${cmenuicons}/Sound.png</iconSound>
+            <iconNetwork>./_art/menu_icons/${cmenuicons}/Network.png</iconNetwork>
+            <iconScraper>./_art/menu_icons/${cmenuicons}/Scraper.png</iconScraper>
+            <iconAdvanced>./_art/menu_icons/${cmenuicons}/Advanced.png</iconAdvanced>
+            <iconQuit>./_art/menu_icons/${cmenuicons}/Quit.png</iconQuit>
+            <iconRestart>./_art/menu_icons/${cmenuicons}/Restart.png</iconRestart>
+            <iconShutdown>./_art/menu_icons/${cmenuicons}/Shutdown.png</iconShutdown>
+            <iconFastShutdown>./_art/menu_icons/${cmenuicons}/Fastshutdown.png</iconFastShutdown>
+            <iconRetroachievements>./_art/menu_icons/${cmenuicons}/Contest.png</iconRetroachievements>
+            <iconEmuelec>./_art/menu_icons/${cmenuicons}/Emuelec.png</iconEmuelec>
+        </menuIcons>
+
+        <helpsystem name="help">
+            <fontPath>./fonts/${font3s}</fontPath>
+            <fontSize>0.032</fontSize>
+            <pos>0.06 0.955</pos>
+            <textColor>${chelptext}</textColor>
+        </helpsystem>
+    </view>
+
+
     <view name="system">
         <image name="background" extra="true">
             <path>./_art/var/dot.png</path>
@@ -34,7 +219,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
         <image name="indicator_bg" extra="true">
             <tile>false</tile>
-            <path>./_art/indicators/left-ray.svg</path>
+            <path>./_art/indicators/left-ray.png</path>
             <size>0 1</size>
             <pos>0 0</pos>
         </image>
@@ -74,21 +259,21 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </carousel>
 
         <text name="sys_line1" extra="true">
-            <fontPath>./_art/BebasNeue.otf</fontPath>
+            <fontPath>./font/BebasNeue.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>1</forceUppercase>
             <color>FFFFFF</color>
         </text>
 
         <text name="sys_line2" extra="true">
-            <fontPath>./_art/BebasNeue.otf</fontPath>
+            <fontPath>./font/BebasNeue.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>1</forceUppercase>
             <color>FFFFFF</color>
         </text>
 
         <text name="shortdescription" extra="true">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
             <fontSize>0.021</fontSize>
@@ -99,7 +284,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </text>
 
         <text name="systemInfo">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <alignment>left</alignment>
             <backgroundColor>00000000</backgroundColor>
             <forceUppercase>1</forceUppercase>
@@ -115,7 +300,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </text>
 
         <text name="longdescription" extra="true">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>0</forceUppercase>
             <fontSize>0.021</fontSize>
@@ -135,7 +320,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </image>
 
         <helpsystem name="help">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <fontSize>0.02</fontSize>
             <origin>1 1</origin> <!--0 0-->
             <pos>0 0</pos> <!--0.0890 0.6283-->
@@ -174,7 +359,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
             <selectorHeight>0.05</selectorHeight>
             <primaryColor>585858</primaryColor>
             <secondaryColor>888888</secondaryColor>
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <alignment>left</alignment>
             <pos>0 0.0833</pos>
             <size>0.323 0.8513</size>
@@ -184,7 +369,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </textlist>
 
         <text name="top_label" extra="true">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <text>Select Game</text>
             <alignment>left</alignment>
             <color>F8F8F8</color>
@@ -195,7 +380,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </text>
 
         <text name="nameLabel" extra="true">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <alignment>left</alignment>
             <forceUppercase>1</forceUppercase>
             <color>ffffff</color>
@@ -206,7 +391,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </text>
 
         <text name="md_description">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <color>818181</color>
             <fontSize>0.02</fontSize>
             <alignment>left</alignment>
@@ -220,14 +405,14 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_rating, md_lbl_genre, md_lbl_players">
             <color>F8F8F8</color>
             <forceUppercase>0</forceUppercase>
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <fontSize>0.0186</fontSize>
         </text>
 
         <text name="md_genre, md_players, md_developer, md_publisher, md_releasedate">
             <color>888888</color>
             <forceUppercase>0</forceUppercase>
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <fontSize>0.0186</fontSize>
         </text>
 
@@ -248,7 +433,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
         </text>
 
         <text name="md_players">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <color>888888</color>
             <fontSize>0.0186</fontSize>
             <pos>0.810 0.185</pos>
@@ -308,14 +493,14 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
         <!-- Extra Text Labels. Edit text values if needed.-->
         <text name="players_lbl_2, btn_a, btn_b, btn_x" extra="true">
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <color>888888</color>
             <fontSize>0.0186</fontSize>
         </text>
 
         <text name="txt_descript" extra="true">
             <text>Description</text>
-            <fontPath>./_art/Acre.otf</fontPath>
+            <fontPath>./font/Acre.otf</fontPath>
             <alignment>left</alignment>
             <fontSize>0.0186</fontSize>
             <color>ffffff</color>
