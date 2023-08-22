@@ -3,7 +3,7 @@
   <include>./../theme.xml</include>
 
   <variables>
-    <systemOrder>10</systemOrder>
+    <systemOrder>11</systemOrder>
   </variables>
 
   <view name="basic, detailed, video, grid">
