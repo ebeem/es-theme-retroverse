@@ -2,15 +2,20 @@
 <formatVersion>4</formatVersion>
 <include>./../theme.xml</include>
 
+<variables>
+  <systemOrder>23</systemOrder>
+</variables>
+
+
 <view name="basic, detailed, video, grid">
     <text name="nameLabel" extra="true">
-    <text>Kodi</text>
+    <text>TV System</text>
   </text>
 </view>    
 
 <view name="system">
   <text name="sys_line2" extra="true">
-    <text>Kodi</text>
+    <text>TV System</text>
     <fontSize>0.18</fontSize>
     <origin>0 0</origin>
     <pos>0.12 0.130</pos>
