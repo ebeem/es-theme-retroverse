@@ -491,6 +491,13 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
             <zIndex>2</zIndex>
         </image>
 
+        <image name="md_image">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>0 0</size>
+            <zIndex>-100</zIndex>
+        </image>
+
         <!-- Extra Text Labels. Edit text values if needed.-->
         <text name="players_lbl_2, btn_a, btn_b, btn_x" extra="true">
             <fontPath>./font/Acre.otf</fontPath>
@@ -549,3 +556,4 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     </feature>
 
 </theme>
+
